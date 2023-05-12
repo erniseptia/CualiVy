@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CualiVy</string>
+    <string name="scan_your_cv">Submit Your CV</string>
+    <string name="copyright">Copyright @2023</string>
+    <string name="gallery">Choose From Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="intro">Find your job with upload or scan your resume.</string>
+    <string name="login">Please Sign In</string>
+    <string name="login_page">Please fill the form to continue.</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="email">Email</string>
+    <string name="invalid_password">Invalid Password</string>
+    <string name="password">Password</string>
+    <string name="dont_have_account">Dont have account? Register </string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="intro_register_page">Please fill this form before continue</string>
+</resources>
