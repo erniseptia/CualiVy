@@ -11,11 +11,11 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import android.util.Log
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.annotation.RequiresApi
 import androidx.camera.core.ImageCapture
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -109,16 +109,21 @@ class MainActivity : AppCompatActivity() {
     private val launcherIntentCamera = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) {
-        if (it.resultCode == RESULT_OK) {
-            val myFile = File(currentPhotoPath)
+        try {
+            if (it.resultCode == RESULT_OK) {
+                val myFile = File(currentPhotoPath)
 
-            myFile.let { file ->
-                rotateFile(file)
-                getFile = myFile
-                binding.ivUpload.setImageBitmap(BitmapFactory.decodeFile(file.path))
+                myFile.let { file ->
+                    rotateFile(file)
+                    getFile = myFile
+                    binding.ivUpload.setImageBitmap(BitmapFactory.decodeFile(file.path))
+                }
             }
+        } catch (e: Exception) {
+            Log.e("404", "$e")
         }
     }
+
 
 
     companion object {
