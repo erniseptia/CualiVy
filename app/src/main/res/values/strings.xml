@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CualiVy</string>
+    <string name="app_name">Cualivy</string>
     <string name="scan_your_cv">Submit Your CV</string>
     <string name="copyright">Copyright @2023</string>
     <string name="gallery">Choose From Gallery</string>
@@ -11,7 +11,8 @@
     <string name="email">Email</string>
     <string name="invalid_password">Invalid Password</string>
     <string name="password">Password</string>
-    <string name="dont_have_account">Dont have account? Register </string>
+    <string name="dont_have_account">Don\'t have account? Register </string>
     <string name="create_new_account">Create New Account</string>
     <string name="intro_register_page">Please fill this form before continue</string>
+    <string name="not_permission">Don\'t have permission</string>
 </resources>
